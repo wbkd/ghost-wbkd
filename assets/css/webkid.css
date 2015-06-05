@@ -39,8 +39,14 @@ body {
 }
 #header ul.taglist li:hover {
   background: #111;
-  color: #fff;
   cursor: pointer;
+}
+#header ul.taglist li:hover a {
+  color: #fff;
+}
+
+#header ul.taglist li a {
+  text-decoration: none;
 }
 
 #content {
