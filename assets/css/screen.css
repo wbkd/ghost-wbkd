@@ -1299,22 +1299,7 @@ body:not(.post-template) .post-title {
     display: none;
     border-bottom: #EBF2F6 1px solid;
 }
-.extra-pagination:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
-}
+
 .extra-pagination .pagination {
     width: auto;
 }

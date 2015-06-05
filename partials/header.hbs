@@ -1,0 +1,14 @@
+{{! The big featured header }}
+<header id="header">
+    <nav class="header-nav">
+        <div class="blog-title">{{@blog.title}}</div>
+    </nav>
+    {{tags autolink="false"}}
+    <ul class="taglist">
+        {{#foreach posts}}
+            {{#foreach tags}}
+            <li><a href="{{url}}">{{name}}</a></li>
+            {{/foreach}}
+        {{/foreach}}
+    </ul>
+</header>

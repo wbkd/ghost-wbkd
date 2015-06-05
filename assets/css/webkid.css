@@ -2,6 +2,47 @@ body {
   background: #f5f5f5;
 }
 
+#header {
+  padding: 0;
+  background: #111;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+#header nav {
+  padding: 1em 1em;
+}
+
+#header .blog-title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#header ul.taglist {
+  background: #ffd00e;
+  margin: 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+#header ul.taglist li {
+  margin: 0;
+  padding: .2em .5em;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: #111;
+  font-size: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+#header ul.taglist li:hover {
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
 #content {
   width: 100%;
   max-width: 1024px;
@@ -24,9 +65,16 @@ body {
   margin-bottom: 2em;
 }
 
-#articles a.article-link, 
-#articles a.article-link:visited, 
-#articles a.article-link:hover {
+#articles .post h2 {
+  color: #4A4A4A;
+}
+
+#articles .post:hover h2 {
+  color: #111;
+}
+
+#articles .post a, 
+#articles .post a:visited{
   text-decoration: none;
 }
 
@@ -37,7 +85,12 @@ body {
 
 .box {
   background: #fff;
+  padding: 1em;
   box-shadow: 0 1px 2px rgba(50,50,50,0.08);
+}
+
+.sidebox {
+  margin-bottom: 1em;
 }
 
 .box.is-link:hover {
