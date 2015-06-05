@@ -89,6 +89,15 @@ body {
   float: left;
 }
 
+#sidebar .links button {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  padding: .5em 0;
+  background: none;
+  border: 1px solid #777;
+}
+
 .box {
   background: #fff;
   padding: 1em;
