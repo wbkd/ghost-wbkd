@@ -48,7 +48,7 @@ $(function() {
     tags.forEach(function(t,i) {
       var $li = $('<li/>');
       var $a = $('<a/>');
-      $a.attr('href', '/tag/' + t);
+      $a.attr('href', '/tag/' + t.replace(' ', '-'));
       $a.html(t);
       $li.append($a);
       $parent.append($li);

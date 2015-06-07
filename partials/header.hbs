@@ -1,8 +1,10 @@
 {{! The big featured header }}
 <header id="header">
-    <nav class="header-nav">
-        <div class="blog-title">{{@blog.title}}</div>
+    <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}">
+        <div class="blog-title"><a class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a></div>
     </nav>
 
-    <ul id="taglist" class="taglist"></ul>
+    <ul id="taglist" class="taglist">
+        <li><a href="{{@blog.url}}">Home</a></li>
+    </ul>
 </header>

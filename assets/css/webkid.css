@@ -10,7 +10,9 @@ body {
 }
 
 #header nav {
-  padding: 1em 1em;
+  padding: 2.5em 1em;
+  background-position: center;
+  background-size: cover;
 }
 
 #header .blog-title {
@@ -18,6 +20,14 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
+  text-decoration: none;
+}
+
+#header .blog-title a,
+#header .blog-title a:visited,
+#header .blog-title a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 #header ul.taglist {
