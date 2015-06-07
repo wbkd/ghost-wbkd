@@ -15,7 +15,10 @@
 
     <div id="article" class="box {{#if image}}has-image{{/if}}">
         {{#if image}}
-        <img src="{{image}}" class="post-image"/>
+        <div class="image-wrapper">
+            <div class="gradient"></div>
+            <img src="{{image}}" class="post-image"/>
+        </div>
         {{/if}}
     
     <article class="{{post_class}}">

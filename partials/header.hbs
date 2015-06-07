@@ -1,6 +1,8 @@
 {{! The big featured header }}
 <header id="header">
     <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}">
+        {{#if @blog.logo}}<a class="blog-logo" href="http://webkid.io"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+
         <div class="blog-title"><a class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a></div>
     </nav>
 
