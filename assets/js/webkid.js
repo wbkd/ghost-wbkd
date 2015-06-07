@@ -14,7 +14,7 @@ $(function() {
 
   function renderLatestArticles(posts) {
 
-    var $parent = $('.sidebox.latest-articles');
+    var $parent = $('.sidebox.latest-articles .sidebox-content');
     if(!$parent) {return};
 
     for(var i = 0; i < 5; i++) {

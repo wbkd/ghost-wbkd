@@ -3,15 +3,10 @@
 
 {{! The big featured header }}
 
+{{>"header"}}
+
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
-        <nav class="main-nav overlay clearfix">
-            <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-            <a class="subscribe-button icon-feed" href="{{url}}rss/">{{name}}</a>
-        </nav>
-    </header>
-
     <section class="author-profile inner">
         {{#if image}}
         <figure class="author-image">

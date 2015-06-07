@@ -13,8 +13,11 @@
 
 <main id="content" class="content" role="main">
 
-    <div id="article">
-
+    <div id="article" class="box {{#if image}}has-image{{/if}}">
+        {{#if image}}
+        <img src="{{image}}" class="post-image"/>
+        {{/if}}
+    
     <article class="{{post_class}}">
 
         <header class="post-header">
@@ -95,6 +98,8 @@
     </article>
 
 </div>
+
+<div id="sidebar">{{>"sidebar"}}</div>
 
 </main>
 
