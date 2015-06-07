@@ -2,8 +2,13 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 
+
     <article class="box is-link {{post_class}}">
+
         <a href="{{url}}">
+            {{#if image}}
+                <section class="post-image" style="background-image:url({{image}})"></section>
+            {{/if}}
             <header class="post-header">
                 <h2 class="post-title">{{{title}}}</h2>
             </header>

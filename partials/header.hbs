@@ -4,9 +4,5 @@
         <div class="blog-title">{{@blog.title}}</div>
     </nav>
 
-    <ul class="taglist">
-        {{#foreach all_tags}}
-            <li><a href="{{url}}">{{name}}</a></li>
-        {{/foreach}}
-    </ul>
+    <ul id="taglist" class="taglist"></ul>
 </header>

@@ -1,19 +1,7 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{! The big featured header }}
-<header class="main-header tag-head {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav overlay clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/tag/{{tag.slug}}/rss/">{{tag.name}}</a>
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{tag.name}}</h1>
-            <h2 class="page-description">A {{pagination.total}}-post collection</h2>
-        </div>
-    </div>
-</header>
+{{> "header"}}
 
 {{! The main content area on the homepage }}
 <main id="content" class="content clearfix" role="main">
@@ -26,10 +14,6 @@
 
     <div id="sidebar">
         {{> "sidebar"}}
-
-        <div class="social-message">
-            <a class="icon-twitter" href="http://twitter.com/webk1d"></a>For recent updates follow us on <a href="http://twitter.com/webk1d" class="link-twitter">twitter</a>
-        </div>
     </div>
 
 </main>

@@ -36,9 +36,10 @@ body {
   font-size: 12px;
   display: inline-block;
   cursor: pointer;
+  transition: none;
 }
 #header ul.taglist li:hover {
-  background: #111;
+  background: #545454;
   cursor: pointer;
 }
 #header ul.taglist li:hover a {
@@ -47,6 +48,8 @@ body {
 
 #header ul.taglist li a {
   text-decoration: none;
+  transition: none;
+  cursor: pointer;
 }
 
 #content {
@@ -65,10 +68,29 @@ body {
 #articles .post {
   width: 100%;
   margin: 0;
+  padding: 0;
+  padding-bottom: 1em;
   max-width: none;
   box-sizing: border-box;
-  padding: 1em;
   margin-bottom: 2em;
+}
+
+#articles .post .post-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#articles .post header,
+#articles .post .post-excerpt,
+#articles .post footer {
+  padding: 0 1em;
+}
+
+#articles .post header {
+  padding-top: 1em;
 }
 
 #articles .post h2 {
