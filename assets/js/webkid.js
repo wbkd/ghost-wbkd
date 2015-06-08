@@ -5,7 +5,7 @@ $(function() {
     var posts = data.channel.item;
     
     renderLatestArticles(posts);
-    renderTagList(posts);
+    //renderTagList(posts);
   }
 
   function renderLatestArticles(posts) {
