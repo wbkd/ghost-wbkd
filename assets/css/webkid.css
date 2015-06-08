@@ -39,7 +39,7 @@ body * {
   text-decoration: none;
   max-width: 1250px;
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1.8rem;
   margin: 0 auto;
 }
 
@@ -177,13 +177,46 @@ body * {
   padding: 0;
 }
 
+.sidebox p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.sidebox.latest-articles a {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  line-height: 1.3;
+}
+
+.sidebox.latest-articles a.last {
+  padding-bottom: 0;
+  border: none;
+}
+
+.sidebox.latest-articles a .date {
+  font-size: .8em;
+  color: #9EABB3;
+  font-weight: normal;
+  margin-bottom: .6em;
+}
+
 .sidebox .sidebox-title {
-  background: #989898;
+  background: #545454;
   padding: .5em 1em;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
+}
+
+.sidebox.about .sidebox-content {
+  font-size: .9em;
+  line-height: 1.7;
 }
 
 .sidebox .sidebox-content {
@@ -200,15 +233,25 @@ body * {
   margin: 0;
 }
 .social-item {
-    width: 33.33333%;
+    width: 25%;
     float:left;
     color: #fff;
     text-decoration: none;
     padding: .3em 0;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.social-item:hover {
+  color: #fff;
 }
 
 .social-item.rss {
   background: #f26522;
+}
+.social-item:hover {
+  opacity: .8;
 }
 
 .social-item.tw {
@@ -217,6 +260,10 @@ body * {
 
 .social-item.home {
   background: #ffd00e;
+}
+
+.social-item.github {
+  background: #333333;
 }
 
 .sidebox.social ul li {
@@ -286,7 +333,7 @@ body * {
 }
 
 /*Tablet*/
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   #sidebar, #articles, #article {
     width: 100%;
   }
