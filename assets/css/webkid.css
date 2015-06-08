@@ -130,7 +130,7 @@ body * {
 #articles .post header,
 #articles .post .post-excerpt,
 #articles .post footer {
-  padding: 0 1em;
+  padding: 0 1.8rem;
 }
 
 #articles .post header {
@@ -330,6 +330,12 @@ body * {
   -webkit-transition: background .5s;
   transition: background .5s;
   font-family: "Open Sans", sans-serif;
+}
+
+a.article-link,
+a.article-link:hover,
+a.article-link:visited {
+  text-decoration: none;
 }
 
 /*Tablet*/

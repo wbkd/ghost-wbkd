@@ -2,28 +2,23 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 
-
+<a class="article-link" href="{{url}}">
     <article class="box is-link {{post_class}}">
-
-        <a href="{{url}}">
-            {{#if image}}
-                <section class="post-image" style="background-image:url({{image}})"></section>
-            {{/if}}
-            <header class="post-header">
-                <h2 class="post-title">{{{title}}}</h2>
-            </header>
-            <section class="post-excerpt">
-                <p>{{excerpt words="26"}}...</p>
-            </section>
-        </a>
+        {{#if image}}
+            <section class="post-image" style="background-image:url({{image}})"></section>
+        {{/if}}
+        <header class="post-header">
+            <h2 class="post-title">{{{title}}}</h2>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt words="26"}}...</p>
+        </section>
         
         <footer class="post-meta">
-            {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-            {{author}}
             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
         </footer>
     </article>
-
+</a>
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}
