@@ -1,5 +1,7 @@
 # ghost-wbkd
-The theme for our [ghost-blog](http://blog.webkid.io).
+A [ghost](https://ghost.org/) theme.
+
+**See it live on [our blog]()(http://blog.webkid.io)**
 
 ### Install
 
