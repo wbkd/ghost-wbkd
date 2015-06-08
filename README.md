@@ -1,6 +1,9 @@
 # ghost-wbkd
 A [ghost](https://ghost.org/) theme.
 
+
+[!screenshot](https://raw.githubusercontent.com/wbkd/ghost-wbkd/master/screenshot.jpg)
+
 **See it live on [our blog](http://blog.webkid.io)**
 
 ### Install
