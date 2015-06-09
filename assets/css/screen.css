@@ -1173,6 +1173,7 @@ body:not(.post-template) .post-title {
   color: #4A4A4A;
   text-align: center;
   margin-bottom: 2em;
+  font-weight: bold;
 }
 
 .pagination a {

@@ -10,7 +10,6 @@ $(function() {
   }
 
   function renderLatestArticles(posts) {
-    console.log(posts);
     var $parent = $('.sidebox.latest-articles .sidebox-content');
     if(!$parent) {return};
 
@@ -24,7 +23,8 @@ $(function() {
       }
       $parent.append($a);
     }
-
+    
+    $parent.removeClass('loading');
   }
 
   $.ajax({
