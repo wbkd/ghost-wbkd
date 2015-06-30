@@ -1,5 +1,5 @@
 # ghost-wbkd
-A [ghost](https://ghost.org/) theme.
+A [ghost](https://ghost.org/)/[journey](https://github.com/kabukky/journey) theme.
 
 
 ![screenshot](https://raw.githubusercontent.com/wbkd/ghost-wbkd/master/screenshot.jpg)
