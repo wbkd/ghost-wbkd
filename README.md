@@ -19,7 +19,16 @@ After that, restart the blog and select the webkid theme in your ghost admin pan
 
 ### Customize
 
-Due to restrictions of the Ghost templates, some values are hard-coded at the moment. To customize the theme, you have to edit the Handlebars templates in the theme folder. 
+Due to restrictions of the Ghost templates, some values are hard-coded at the moment. To customize the theme, you have to edit the Handlebars templates in the theme folder.
+
+**Disqus**
+
+To enable the Disqus comment module, you have to add you Disqus username in the ```post.hbs``` file:
+
+```
+var disqus_shortname = 'example'; // required: replace example with your forum shortname
+```
+
 
 **Navigation**
 
