@@ -13,7 +13,7 @@ $(function() {
     var $parent = $('.sidebox.latest-articles .sidebox-content');
     if(!$parent) {return};
 
-    for(var i = 0; i < 5; i++) {
+    for(var i = 0; i < Math.min(posts.length, 5); i++) {
       var p = posts[i];
       var date = new Date(p.pubDate);
       var dateStr = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
