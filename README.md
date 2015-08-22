@@ -71,20 +71,6 @@ The other two widgets are configured in the ```partials/sidebar.hbs``` template.
 </div>
 ```
 
-### License
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-Version 2, December 2004 
-
-Copyright (C) 2015 [webkid.io](http://www.webkid.io)
-
-Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed. 
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
-
-  0. You just DO WHAT THE FUCK YOU WANT TO.
-
 ### Authors
 
 [Moritz Klack](http://twitter.com/moklick) and [Christopher Möller](http://twitter.com/chrtze) of [webkid.io](http://www.webkid.io).
