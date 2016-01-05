@@ -53,7 +53,7 @@ body * {
 
 #header .taglist-wrapper {
   width: 100%;
-  background: #ffd00e;
+  background: #00a88e;
   padding: 0;
 }
 
@@ -85,6 +85,7 @@ body * {
 }
 
 #header ul.taglist li a {
+  color: white;
   text-decoration: none;
   transition: none;
   cursor: pointer;
