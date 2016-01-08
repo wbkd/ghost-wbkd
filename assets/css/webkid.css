@@ -134,15 +134,6 @@ body * {
   padding: 0 1.8rem;
 }
 
-#articles .post header {
-  padding-top: 1em;
-}
-
-#articles .post h1 {
-  font-size: 60%;
-  color: #4A4A4A;
-}
-
 #articles .post:hover h2 {
   color: #111;
   font-size: 60%;
@@ -241,7 +232,7 @@ body * {
 }
 
 .sidebox .sidebox-title-about {
-  background: #fff;
+  background: #f5f5f5;
   color: #545454;
   text-align: center;
   
@@ -273,7 +264,7 @@ body * {
     float:left;
     color: #fff;
     text-decoration: none;
-    padding: .3em 0;
+    padding: .2em 0;
     -webkit-transition: opacity .3s;
     -o-transition: opacity .3s;
     transition: opacity .3s;
