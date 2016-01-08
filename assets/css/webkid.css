@@ -138,7 +138,7 @@ body * {
   padding-top: 1em;
 }
 
-#articles .post h2 {
+#articles .post h1 {
   font-size: 60%;
   color: #4A4A4A;
 }
@@ -146,6 +146,13 @@ body * {
 #articles .post:hover h2 {
   color: #111;
   font-size: 60%;
+}
+#articles .post h2 {
+  color: #4A4A4A;
+}
+
+#articles .post:hover h2 {
+  color: #111;
 }
 
 #articles .post a, 
