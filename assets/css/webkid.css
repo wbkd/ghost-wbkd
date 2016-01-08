@@ -183,6 +183,10 @@ body * {
   margin-bottom: 1em;
 }
 
+.sidebox.title {
+  color: #ffffff;
+}
+
 .sidebox.latest-articles a {
   text-decoration: none;
   margin-bottom: 1rem;
