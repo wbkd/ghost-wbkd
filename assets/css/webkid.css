@@ -134,23 +134,18 @@ body * {
   padding: 0 1.8rem;
 }
 
-#articles .post:hover h1 {
-  color: #111;
-  font-size: 40%;
-}
-#articles .post h1 {
-  color: #4A4A4A;
-    font-size: 40%;
-}
+
 #articles .post:hover h2 {
   color: #111;
 }
 #articles .post h2 {
   color: #4A4A4A;
+  font-size: 40%;
 }
 
 #articles .post:hover h2 {
   color: #111;
+  font-size: 40%;
 }
 
 #articles .post a, 
@@ -271,7 +266,7 @@ body * {
     float:left;
     color: #fff;
     text-decoration: none;
-    padding: .6em 0;
+    padding: .6em 0 .3em;
     -webkit-transition: opacity .3s;
     -o-transition: opacity .3s;
     transition: opacity .3s;
