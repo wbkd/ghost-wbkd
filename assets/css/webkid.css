@@ -138,12 +138,14 @@ body * {
   padding-top: 1em;
 }
 
-#articles .post h3 {
+#articles .post h2 {
+  font-size: 60%;
   color: #4A4A4A;
 }
 
-#articles .post:hover h3 {
+#articles .post:hover h2 {
   color: #111;
+  font-size: 60%;
 }
 
 #articles .post a, 
