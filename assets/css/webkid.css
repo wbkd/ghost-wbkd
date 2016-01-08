@@ -121,7 +121,7 @@ body * {
 }
 
 #articles .post .post-image {
-  width: 50%;
+  width: 100%;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,11 +138,11 @@ body * {
   padding-top: 1em;
 }
 
-#articles .post h2 {
+#articles .post h3 {
   color: #4A4A4A;
 }
 
-#articles .post:hover h2 {
+#articles .post:hover h3 {
   color: #111;
 }
 
@@ -231,8 +231,8 @@ body * {
   font-weight: bold;
 }
 
-.sidebox-title-about {
-  background: #000;
+.sidebox .sidebox-title-about {
+  background: #fff;
   color: #545454;
   text-align: center;
   
