@@ -260,8 +260,23 @@ body * {
   color: #fff;
 }
 
+.social-item.email:hover {
+  color: #000000;
+}
 .social-item.rss {
   background: #f26522;
+}
+.social-item.vk {
+  background: #4c75a3;
+}
+.social-item.facebook {
+  background: #3a589e;
+}
+.social-item.email {///
+  background: #ffffff;
+}
+.social-item.telegram {
+  background: #57c1eb;
 }
 .social-item:hover {
   opacity: .8;
