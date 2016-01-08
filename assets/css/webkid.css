@@ -250,7 +250,7 @@ body * {
   margin: 0;
 }
 .social-item {
-    width: 25%;
+    width: 20%;
     float:left;
     color: #fff;
     text-decoration: none;
@@ -263,10 +263,6 @@ body * {
 .social-item:hover {
   color: #fff;
 }
-
-.social-item.email:hover {
-  color: #000000;
-}
 .social-item.rss {
   background: #f26522;
 }
@@ -276,8 +272,9 @@ body * {
 .social-item.facebook {
   background: #3a589e;
 }
-.social-item.email {///
+.social-item.email {
   background: #ffffff;
+  color: #000000;
 }
 .social-item.telegram {
   background: #57c1eb;
