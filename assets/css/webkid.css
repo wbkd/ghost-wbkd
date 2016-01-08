@@ -231,6 +231,11 @@ body * {
   font-weight: bold;
 }
 
+.sidebox .sidebox-title.about {
+  background: #000;
+  color: #545454;
+}
+
 .sidebox.about .sidebox-content {
   font-size: .9em;
   line-height: 1.7;
