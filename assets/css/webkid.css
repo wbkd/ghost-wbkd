@@ -121,7 +121,7 @@ body * {
 }
 
 #articles .post .post-image {
-  width: 100%;
+  width: 50%;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,7 +231,7 @@ body * {
   font-weight: bold;
 }
 
-.sidebox .sidebox-title-about {
+.sidebox-title-about {
   background: #000;
   color: #545454;
   text-align: center;
