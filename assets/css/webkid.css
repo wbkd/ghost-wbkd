@@ -133,21 +133,20 @@ body * {
 #articles .post footer {
   padding: 0 1.8rem;
 }
-#articles .post:hover h1 {
-  color: #111;
-  font-size: 10%;
-}
-#articles .post h2 {
-  color: #4A4A4A;
-    font-size: 10%;
-}
+
 #articles .post:hover h1 {
   color: #111;
   font-size: 60%;
 }
-#articles .post h2 {
+#articles .post h1 {
   color: #4A4A4A;
     font-size: 60%;
+}
+#articles .post:hover h2 {
+  color: #111;
+}
+#articles .post h2 {
+  color: #4A4A4A;
 }
 
 #articles .post:hover h2 {
