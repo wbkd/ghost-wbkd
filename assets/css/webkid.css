@@ -136,11 +136,11 @@ body * {
 
 #articles .post:hover h1 {
   color: #111;
-  font-size: 60%;
+  font-size: 40%;
 }
 #articles .post h1 {
   color: #4A4A4A;
-    font-size: 60%;
+    font-size: 40%;
 }
 #articles .post:hover h2 {
   color: #111;
@@ -271,7 +271,7 @@ body * {
     float:left;
     color: #fff;
     text-decoration: none;
-    padding: .4em 0;
+    padding: .6em 0;
     -webkit-transition: opacity .3s;
     -o-transition: opacity .3s;
     transition: opacity .3s;
