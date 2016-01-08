@@ -136,12 +136,12 @@ body * {
 
 #articles .post h2 {
   color: #4A4A4A;
-  font-size: 150%;
+  font-size: 130%;
 }
 
 #articles .post:hover h2 {
   color: #111;
-  font-size: 150%;
+  font-size: 130%;
 }
 
 #articles .post a, 
