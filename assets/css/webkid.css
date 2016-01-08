@@ -134,18 +134,14 @@ body * {
   padding: 0 1.8rem;
 }
 
-
-#articles .post:hover h2 {
-  color: #111;
-}
 #articles .post h2 {
   color: #4A4A4A;
-  font-size: 40%;
+  font-size: 70%;
 }
 
 #articles .post:hover h2 {
   color: #111;
-  font-size: 40%;
+  font-size: 70%;
 }
 
 #articles .post a, 
