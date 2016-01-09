@@ -1,17 +1,19 @@
 {{! The big featured header }}
 <header id="header">
-    <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}">
+    <!-- <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}"> -->
 
       <div class="blog-title"><a href="/">{{@blog.title}}</a></div>
 
       <!--Change this to customize the navigation-->
       <div class="taglist-wrapper clearfix">
-        <ul id="taglist" class="taglist">
-            <li><a href="http://blog.itkpi.pp.ua/about/">Про нас</a></li>
-            <li><a href="http://blog.itkpi.pp.ua/tag/edu/">Education</a></li>
-            <li><a href="http://blog.itkpi.pp.ua/tag/swift/">Swift</a></li>
-            <li><a href="http://blog.itkpi.pp.ua/tag/fun/">Fun</a></li>
-        </ul>
+        <center>
+          <ul id="taglist" class="taglist">
+              <li><a href="http://blog.itkpi.pp.ua/about/">Про нас</a></li>
+              <li><a href="http://blog.itkpi.pp.ua/tag/edu/">Education</a></li>
+              <li><a href="http://blog.itkpi.pp.ua/tag/swift/">Swift</a></li>
+              <li><a href="http://blog.itkpi.pp.ua/tag/fun/">Fun</a></li>
+          </ul>
+        </center>
       </div>
     </nav>
 

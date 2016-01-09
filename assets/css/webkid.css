@@ -35,34 +35,34 @@ body * {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 50px;
   text-decoration: none;
   max-width: 1250px;
   width: 100%;
   padding: 1.5rem 1.8rem;
   margin: 0 auto;
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
 #header .blog-title a,
 #header .blog-title a:visited,
 #header .blog-title a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #00a88e;
   padding: 0;
 }
 
 #header .taglist-wrapper {
   width: 100%;
-  background: #00a88e;
+  background: #f5f5f5;
   padding: 0;
 }
 
 #header ul.taglist {
-  padding: 0 1em;
-  margin: 0;
   list-style: none;
   max-width: 1250px;
-  margin: 0 auto;
+  display: table-row;
 }
 
 #header ul.taglist li {
@@ -71,7 +71,7 @@ body * {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   color: #111;
-  font-size: 12px;
+  font-size: 14px;
   float: left;
   cursor: pointer;
   transition: none;
@@ -85,7 +85,7 @@ body * {
 }
 
 #header ul.taglist li a {
-  color: white;
+  color: #00a88e;
   text-decoration: none;
   transition: none;
   cursor: pointer;
@@ -95,7 +95,7 @@ body * {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 2.5em;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
