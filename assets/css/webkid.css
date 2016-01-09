@@ -136,12 +136,12 @@ body * {
 
 #articles .post h2 {
   color: #4A4A4A;
-  font-size: 130%;
+  font-size: 140%;
 }
 
 #articles .post:hover h2 {
   color: #111;
-  font-size: 130%;
+  font-size: 140%;
 }
 
 #articles .post a, 
@@ -166,7 +166,7 @@ body * {
 }
 
 .box {
-  background: #fff;
+  background: #00a88e;
   padding: 1em;
   box-shadow: 0 1px 2px rgba(50,50,50,0.08);
 }
