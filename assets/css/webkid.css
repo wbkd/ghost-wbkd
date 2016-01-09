@@ -229,16 +229,6 @@ body * {
   font-weight: bold;
 }
 
-.sidebox .sidebox-title-about {
-  background: #00a88e;
-  color: #545454;
-  text-align: center;
-  
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-}
-
 .sidebox.about .sidebox-content {
   font-size: .9em;
   line-height: 1.7;
