@@ -1,4 +1,21 @@
+function setColorsFilter() {
+  var invertedPercent = Cookies.get("invertedPercent");
+  if (invertedPercent === undefined) {
+    invertedPercent = "0%";
+  }
+  $("body").css("filter", "invert(" + invertedPercent + ")");
+}
+
+function invert() {
+  var inverted = Cookies.get("invertColors");
+  if (inverted == "0%") inverted = "1000%"
+  else inverted == "0%";
+  Cookies.set("invertColors", inverted);
+  setColorsFilter();
+}
+
 $(function() {
+  setColorsFilter();
 
   var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
