@@ -4,6 +4,10 @@ function setColorsFilter() {
     invertedPercent = "0%";
   }
   $("body").css("filter", "invert(" + invertedPercent + ")");
+  $("body").css("-webkit-filter", "invert(" + invertedPercent + ")");
+  $("body").css("-moz-filter", "invert(" + invertedPercent + ")");
+  $("body").css("-ms-filter", "invert(" + invertedPercent + ")");
+  $("body").css("-o-filter", "invert(" + invertedPercent + ")");
 }
 
 function invert() {
