@@ -1,5 +1,5 @@
 body {
-  background: #f5f5f5;
+  
 }
 
 body * {
@@ -12,7 +12,6 @@ body * {
 #header {
   padding: 0;
   color: #fff;
-  margin-bottom: 2em;
 }
 
 #header nav {
@@ -55,7 +54,7 @@ body * {
 #header .taglist-wrapper {
   width: 100%;
   background: #f5f5f5;
-  padding: 0;
+  padding: 0 0 2em;
 }
 
 #header ul.taglist {
@@ -91,6 +90,7 @@ body * {
 }
 
 #content {
+  background: #f5f5f5;
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
@@ -298,6 +298,10 @@ body * {
   list-style-type: none;
 }
 
+.site-footer {
+  background: #f5f5f5;
+  margin: 0;
+}
 
 
 .box.is-link:hover {
