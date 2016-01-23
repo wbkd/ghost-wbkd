@@ -25,8 +25,10 @@
 </head>
 <body class="{{body_class}}">
 
-    {{! Everything else gets inserted here }}
-    {{{body}}}
+    <div id="body-wrapper">
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+    </div>
 
     <footer class="site-footer clearfix">
          <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
