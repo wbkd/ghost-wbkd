@@ -8,8 +8,8 @@ function setColorsFilter() {
 
 function invert() {
   var inverted = Cookies.get("invertColors");
-  if (inverted == "0%") inverted = "1000%"
-  else inverted == "0%";
+  if (inverted == "0%") inverted = "100%"
+  else inverted = "0%";
   Cookies.set("invertColors", inverted);
   setColorsFilter();
 }
