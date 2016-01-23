@@ -380,3 +380,15 @@ a.article-link:visited {
     display: none;
   }
 }
+
+.invertSwitch {
+    font-size: 15px;
+    left: 15px;
+    position: absolute;
+    text-decoration: none;
+    top: 15px;
+}
+.invertSwitch:hover {
+  background: #545454;
+  cursor: pointer;
+}
