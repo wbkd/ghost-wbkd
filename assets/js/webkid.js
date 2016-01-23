@@ -1,5 +1,5 @@
 function setColorsFilter() {
-  var invertedPercent = Cookies.get("invertedPercent");
+  var invertedPercent = Cookies.get("invertColors");
   if (invertedPercent === undefined) {
     invertedPercent = "0%";
   }
