@@ -399,8 +399,12 @@ a.article-link:visited {
 }
 
 .ads {
-    background-color: #d6edff;
-    height: 360px;
-    margin: auto;
-    width: 311px;
+  background-image: url("https://pp.vk.me/c628818/v628818942/359cb/Ax9yJrpAp_k.jpg");
+  background-size: cover;
+  background-color: #d6edff;
+  background-repeat:   no-repeat;
+  background-position: center center;  
+  height: 500px;
+  margin: auto;
+  width: 311px;
 }
