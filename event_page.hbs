@@ -22,8 +22,23 @@
 
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
-            <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MMMM.YYYY"}}</time>
+            <section class="event-meta">
+                Коли:
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                    {{#if only_date }}
+                        {{strftime source='when_start' format='%d.%m %a' }}
+                    {{ else }}
+                        {{strftime source='when_start' format='%d.%m %a %H:%M' }}
+                    {{/if}}
+                    {{#if when_end }}
+                    -
+                        {{#if only_date }}
+                            {{strftime source='when_end' format='%d.%m %a' }}
+                        {{ else }}
+                            {{strftime source='when_end' format='%d.%m %a %H:%M' }}
+                        {{/if}}
+                    {{/if}}
+                </time>
                 <!--<span class="author">by {{author}}</span>-->
             </section>
         </header>
