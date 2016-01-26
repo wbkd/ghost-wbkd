@@ -41,13 +41,13 @@
         {{! Previous/next page links - displayed on every page }}
         <nav role="navigation" class="pagination">
             {{#if offset}}
-                <a href="/events{{archive}}/page/{{prev_page}}/" class="newer-posts">← Older Events</a>
+                <a href="/events{{archive}}/page/{{prev_page}}/" class="newer-posts">← Назад</a>
             {{/if}}
 
             <span class="page-number">Page {{page}}</span>
 
             {{#if has_next}}
-                <a href="/events{{archive}}/page/{{next_page}}/" class="older-posts">Older Events →</a>
+                <a href="/events{{archive}}/page/{{next_page}}/" class="older-posts">Вперед →</a>
             {{/if}}
 
         </nav>
