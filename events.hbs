@@ -12,11 +12,11 @@
         {{#if archive}}
             <h2>Попередні івенти</h2>
         {{else}}
-            <a href="/archive/">Попередні івенти</a>
+            <a href="/events/archive/">Попередні івенти</a>
         {{/if}}
 
         {{#each events}}
-        <a class="article-link" href="/event/{{id}}/">
+        <a class="article-link" href="/events/event/{{id}}/">
             <article class="box is-link post">
                 {{#if image_url}}
                     <section class="post-image" style="background-image:url({{image_url}})"></section>
@@ -41,13 +41,13 @@
         {{! Previous/next page links - displayed on every page }}
         <nav role="navigation" class="pagination">
             {{#if offset}}
-                <a href="{{archive}}/page/{{prev_page}}/" class="newer-posts">← Older Events</a>
+                <a href="/events{{archive}}/page/{{prev_page}}/" class="newer-posts">← Older Events</a>
             {{/if}}
 
             <span class="page-number">Page {{page}}</span>
 
             {{#if has_next}}
-                <a href="{{archive}}/page/{{next_page}}/" class="older-posts">Older Events →</a>
+                <a href="/events{{archive}}/page/{{next_page}}/" class="older-posts">Older Events →</a>
             {{/if}}
 
         </nav>
