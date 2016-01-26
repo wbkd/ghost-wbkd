@@ -27,11 +27,13 @@
   </div>
 </div>
 
-<div class="box sidebox latest-articles">
-  <div class="sidebox-title">Останні дописи</div>
-  <div class="sidebox-content loading">
-    <div class="loader">
-      <i class="fa fa-spinner fa-spin"></i>
+{{#unless hideTags}}
+    <div class="box sidebox latest-articles">
+      <div class="sidebox-title">Останні дописи</div>
+      <div class="sidebox-content loading">
+        <div class="loader">
+          <i class="fa fa-spinner fa-spin"></i>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+{{/unless}}
