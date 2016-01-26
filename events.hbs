@@ -8,8 +8,10 @@
 
     
     <div id="articles">
+        <h1>Events@ІТ КПІ</h1>
+
         {{#each events}}
-        <a class="article-link" href="/event/{{id}}/">
+        <a class="article-link" href="event/{{id}}/">
             <article class="box is-link post">
                 {{#if image_url}}
                     <section class="post-image" style="background-image:url({{image_url}})"></section>
