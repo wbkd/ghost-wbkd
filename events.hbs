@@ -8,8 +8,43 @@
 
     
     <div id="articles">
-        {{! The tag below includes the post loop - partials/loop.hbs }}
-        {{> "loop"}}
+        {{#each events}}
+        <a class="article-link" href="/event/{{id}}/">
+            <article class="box is-link post">
+                {{#if image_url}}
+                    <section class="post-image" style="background-image:url({{image_url}})"></section>
+                {{/if}}
+                <header class="post-header">
+                    <h2 class="post-title">{{{title}}}</h2>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{{excerpt words="26"}}}...</p>
+                    <br />
+                    <p>{{{social}}}</p>
+                    <p><i>Натисніть щоб прочитати детальніше</i></p>
+                </section>
+
+                <footer class="post-meta">
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MMMM.YYYY"}}</time>
+                </footer>
+            </article>
+        </a>
+        {{/each}}
+
+        {{! Previous/next page links - displayed on every page }}
+        <nav role="navigation" class="pagination">
+            {{#if offset}}
+                <a href="/page/{{prev_page}}/" class="newer-posts">← Older Events</a>
+            {{/if}}
+
+            <span class="page-number">Page {{page}}</span>
+
+            {{#if has_next}}
+                <a href="/page/{{next_page}}/" class="older-posts">Older Events →</a>
+            {{/if}}
+
+        </nav>
+
     </div>
 
     <div id="sidebar">

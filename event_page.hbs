@@ -1,0 +1,54 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<link rel="stylesheet" href="/assets/css/prism.css">
+<script src="/assets/js/prism.js"></script>
+
+{{> "header"}}
+
+
+<main id="content" class="content clearfix" role="main">
+
+    <div id="article" class="box {{#if image_url}}has-image{{/if}}">
+        {{#if image_url}}
+        <div class="image-wrapper">
+            <img src="{{image_url}}" class="post-image"/>
+        </div>
+        {{/if}}
+    
+    <article class="post {{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MMMM.YYYY"}}</time>
+                <!--<span class="author">by {{author}}</span>-->
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>{{{agenda}}}</p>
+            <br>
+            <p>{{{social}}}</p>
+        </section>
+
+        <footer class="post-footer">
+
+            <section>
+                <h2>Деталі</h2>
+                    {{#if place}}<p><span class="author-location icon-location">Місце: {{place}}</span></p>{{/if}}
+                    {{#if registration_url}}<p><span class="author-link icon-link"><a href="{{registration_url}}">Реєстрація</a></span></p>{{/if}}
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</div>
+
+<div id="sidebar">{{> "sidebar"}}</div>
+
+</main>
