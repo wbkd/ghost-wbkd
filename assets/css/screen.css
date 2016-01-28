@@ -748,9 +748,14 @@ body:not(.post-template) .post-title {
 .post-date {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 1.3rem;
     white-space: nowrap;
+    
+    margin: 0.8rem 0 0.6rem 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
 }
+
 
 .user-image {
     position: absolute;

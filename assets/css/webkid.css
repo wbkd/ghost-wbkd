@@ -132,7 +132,7 @@ body * {
   background-position: center;
 }
 
-#articles .post header,
+#articles .post-header,
 #articles .post .post-excerpt,
 #articles .post footer {
   padding: 0 1.8rem;
