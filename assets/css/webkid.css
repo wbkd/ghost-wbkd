@@ -124,9 +124,18 @@ body * {
   margin-bottom: 2em;
 }
 
-#articles .post .post-image {
+#articles .post .event-image {
   width: 48%;
   height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#articles .post .post-image {
+  width: 100%;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -340,13 +349,19 @@ body * {
   opacity: .5;
 }
 
-#article img.post-image {
+#article img.event-image {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
   display: block;
 }
 
+#article img.post-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  display: block;
+}
 .button {
   background: #989898;
   border-radius: 0;
