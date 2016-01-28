@@ -18,22 +18,15 @@
         {{#each events}}
         <a class="article-link" href="/events/event/{{id}}/">
             <article class="box is-link post">
-                {{#if image_url}}
-                    <section class="post-image" style="background-image:url({{image_url}})"></section>
-                {{/if}}
-                <header class="post-header">
+                
+                <header class="post-header"> 
                     <h2 class="post-title">{{{title}}}</h2>
                 </header>
+               <img class="post-image" src="{{image_url}}" align="left"  vspace="5" hspace="15">
                 <section class="post-excerpt">
-                    <p>{{{excerpt words="26"}}}...</p>
-                    <br />
-                    <p>{{{social}}}</p>
-                    <p><i>Натисніть щоб прочитати детальніше</i></p>
-                </section>
-
-                <footer class="post-meta">
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MMMM.YYYY"}}</time>
-                </footer>
+                  {{{excerpt words="25"}}}...<br/><br/>
+                  <p class="post-meta" align="right"><i> min: {{level}}</i></p>
+                  </section> 
             </article>
         </a>
         {{/each}}

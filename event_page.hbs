@@ -12,56 +12,53 @@
 <main id="content" class="content clearfix" role="main">
 
     <div id="article" class="box {{#if image_url}}has-image{{/if}}">
-        {{#if image_url}}
-        <div class="image-wrapper">
-            <img src="{{image_url}}" class="post-image"/>
-        </div>
+        {{#if image_url}}<!-- <div class="image-wrapper"> -->
+            <img src="{{image_url}}" class="post-image"/><!-- </div> -->
         {{/if}}
     
     <article class="post {{post_class}}">
 
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
-            <section class="event-meta">
-                Коли:
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+        </header>
+
+        <section class="post-content">
+            <p>{{{agenda}}}</p>
+            
+            <p>{{{social}}}</p>
+        </section>
+
+        <section> <!-- class="post-footer" -->   
+            <h4>Деталі</h4>        
+            <!-- class="event-meta" -->
+                <b>Дата і час:</b>
+                <time datetime="{{date format='YYYY-MM-DD'}}"> <!-- class="post-date" -->
                     {{#if only_date }}
                         {{strftime source='when_start' format='%d.%m %a' }}
                     {{ else }}
                         {{strftime source='when_start' format='%d.%m %a %H:%M' }}
                     {{/if}}
                     {{#if when_end }}
-                    -
+                    —
                         {{#if only_date }}
                             {{strftime source='when_end' format='%d.%m %a' }}
                         {{ else }}
                             {{strftime source='when_end' format='%d.%m %a %H:%M' }}
                         {{/if}}
                     {{/if}}
-                </time>
+                </time><br/>
                 <!--<span class="author">by {{author}}</span>-->
-            </section>
-        </header>
 
-        <section class="post-content">
-            <p>{{{agenda}}}</p>
-            <br>
-            <p>{{{social}}}</p>
+            
+            {{#if place}}<span class="author-location icon-location"><b>Місце:</b> <a href ="https://www.google.com/maps?q={{place}}">{{place}}</a></span>{{/if}}<br/>
+            {{#if level}}<b>Складність:</b> {{level}}{{/if}}<br/>
+            <br/>
+<!-- Можна причепити рахувальник кількості переходів -->
+             {{#if registration_url}}<p><input class="author-link icon-link" style="width:200px;height:50px;font-weight:bold" value="Реєстрація" type="button" onclick="window.open('{{registration_url}}'); return false;" /></p>{{/if}}
         </section>
-
-        <footer class="post-footer">
-
-            <section>
-                <h2>Деталі</h2>
-                    {{#if place}}<p><span class="author-location icon-location">Місце: {{place}}</span></p>{{/if}}
-                    {{#if registration_url}}<p><span class="author-link icon-link"><a href="{{registration_url}}">Реєстрація</a></span></p>{{/if}}
-            </section>
-
-        </footer>
 
 
     </article>
-
 </div>
 
 <div id="sidebar">{{> "sidebar"}}</div>

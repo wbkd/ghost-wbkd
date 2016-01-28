@@ -211,7 +211,7 @@ dl dt {
 }
 
 dl dd {
-    //margin-left: 200px;
+    margin-left: 200px;
     margin-bottom: 1em
 }
 
@@ -684,7 +684,7 @@ margin on the iframe, cause it breaks stuff. */
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
@@ -698,6 +698,11 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
+.post-excerpt{
+    margin: 0;
+    font-size: 0.94em;
+    line-height: 1.5em;
+}
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
