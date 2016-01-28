@@ -132,7 +132,7 @@ body * {
   background-position: center;
 }
 
-#articles .event-image {
+#articles .post-image-event {
   width: 48%;
   height: 190px;
   background-size: cover;
@@ -347,7 +347,7 @@ body * {
   opacity: .5;
 }
 
-#article img.event-image, img.post-image {
+#article img.post-image {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
