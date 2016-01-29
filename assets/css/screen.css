@@ -709,6 +709,7 @@ body:not(.post-template) .post-title {
     font-size: 0.94em;
     line-height: 1.5em;
     padding-right: 1em;
+    padding-left: 50%;
 }
 .read-more {
     text-decoration: none;
