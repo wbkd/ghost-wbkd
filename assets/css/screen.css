@@ -698,17 +698,18 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
-.post-excerpt{
-    margin: 0;
-    font-size: 0.94em;
-    line-height: 1.5em;
-}
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
     line-height: 1.7em;
 }
 
+ .event-excerpt {
+    margin: 0;
+    font-size: 0.94em;
+    line-height: 1.5em;
+    padding-right: 1em;
+}
 .read-more {
     text-decoration: none;
 }

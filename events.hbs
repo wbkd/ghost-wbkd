@@ -24,13 +24,16 @@
                     <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MMMM.YYYY"}}</time><br/>
                     {{{title}}}</h2>
                 </header>
-               <img class="event-image" src="{{image_url}}" align="left"  vspace="5" hspace="15">
-                <section class="post-excerpt">
-                  {{{excerpt words="25"}}}...<br/><br/>
+               <p class="event-image"><img class="event-image-crop" src="{{image_url}}"></p>
+                <section class="event-excerpt">
+                  {{{excerpt words="24"}}}...
                   <p class="post-meta" align="right"><i> min: {{level}}</i></p>
                   </section> 
+                  
             </article>
+            <!--<article class="box is-link post"></article>-->
         </a>
+        
         {{/each}}
 
         {{! Previous/next page links - displayed on every page }}

@@ -114,6 +114,7 @@ body * {
 
 #articles .post {
   width: 100%;
+  min-height: 220px;
   margin: 0;
   padding: 0;
   padding-bottom: 1em;
@@ -133,12 +134,29 @@ body * {
 }
 
 #articles .post .event-image {
-  width: 48%;
-  height: 190px;
+
+
+  width: 45%;
+  height: 150px;
+ 
+  float:left;
+  margin:.5em 20px 0 15px;
+  overflow:hidden; /* this is important */
+  
+  
+  }
+#articles .post .event-image-crop {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 300%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+
 }
+
 #articles .post-header,
 #articles .post .post-excerpt,
 #articles .post footer {
