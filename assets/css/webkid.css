@@ -114,7 +114,7 @@ body * {
 
 #articles .post {
   width: 100%;
-  min-height: 220px;
+  min-height: 250px;
   margin: 0;
   padding: 0;
   padding-bottom: 1em;
@@ -140,7 +140,7 @@ body * {
   height: 150px;
  
   float:left;
-  margin:.5em 20px 0 0;
+  margin:.5em 20px 0 15px;
   overflow:hidden; /* this is important */
   
   

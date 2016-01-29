@@ -705,7 +705,7 @@ body:not(.post-template) .post-title {
 }
 
  .event-excerpt {
-    margin: 15px 0 0 0;
+    margin: 0;
     font-size: 0.94em;
     line-height: 1.5em;
     padding-right: 1em;
