@@ -950,7 +950,7 @@ body:not(.post-template) .post-title {
    links remain at a fixed width the whole time */
 .post-footer .share {
     position: absolute;
-    top: 6rem;
+    top: 9rem;
     right: 0;
     width: 140px;
 }
