@@ -54,4 +54,5 @@ $(function() {
     type: 'GET'
   }).success(renderSite);
 
+  $('a[href^="http://"]').add('a[href^="https://"]').not('a[href*=itkpi]').attr('target','_blank');
 });
