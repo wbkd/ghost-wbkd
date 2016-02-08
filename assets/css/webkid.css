@@ -1,5 +1,5 @@
 body {
-  
+
 }
 
 body * {
@@ -138,12 +138,12 @@ body * {
 
   width: 45%;
   height: 150px;
- 
+
   float:left;
   margin:.5em 20px 0 15px;
   overflow:hidden; /* this is important */
-  
-  
+
+
   }
 #articles .post .event-image-crop {
   height: auto;
@@ -173,7 +173,7 @@ body * {
   font-size: 140%;
 }
 
-#articles .post a, 
+#articles .post a,
 #articles .post a:visited{
   text-decoration: none;
 }
@@ -423,13 +423,16 @@ a.article-link:visited {
   cursor: pointer;
 }
 
+.ads-wrapper {
+  padding: 0 10px;
+}
+
 .ads {
   background-image: url("https://pp.vk.me/c628818/v628818942/359cb/Ax9yJrpAp_k.jpg");
   background-size: cover;
   background-color: #d6edff;
   background-repeat:   no-repeat;
-  background-position: center center;  
+  background-position: center center;
   height: 500px;
   margin: auto;
-  width: 311px;
 }
