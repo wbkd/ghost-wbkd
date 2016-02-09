@@ -3,23 +3,13 @@ function setColorsFilter() {
   if (invertedPercent === undefined) {
     invertedPercent = "0%";
   }
-  $("body").css("filter", "invert(" + invertedPercent + ")");
-  $("body").css("-webkit-filter", "invert(" + invertedPercent + ")");
-  $("body").css("-moz-filter", "invert(" + invertedPercent + ")");
-  $("body").css("-ms-filter", "invert(" + invertedPercent + ")");
-  $("body").css("-o-filter", "invert(" + invertedPercent + ")");
-
-  $("img").css("filter", "invert(" + invertedPercent + ")");
-  $("img").css("-webkit-filter", "invert(" + invertedPercent + ")");
-  $("img").css("-moz-filter", "invert(" + invertedPercent + ")");
-  $("img").css("-ms-filter", "invert(" + invertedPercent + ")");
-  $("img").css("-o-filter", "invert(" + invertedPercent + ")");
-
-  $(".ads").css("filter", "invert(" + invertedPercent + ")");
-  $(".ads").css("-webkit-filter", "invert(" + invertedPercent + ")");
-  $(".ads").css("-moz-filter", "invert(" + invertedPercent + ")");
-  $(".ads").css("-ms-filter", "invert(" + invertedPercent + ")");
-  $(".ads").css("-o-filter", "invert(" + invertedPercent + ")");
+  ["body", "img", ".ads", ".post-image"].forEach(function(sel) {
+    $(sel).css("filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-webkit-filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-moz-filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-ms-filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-o-filter", "invert(" + invertedPercent + ")");
+  });
 }
 
 function invert() {
