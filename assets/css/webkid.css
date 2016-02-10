@@ -428,11 +428,9 @@ a.article-link:visited {
 }
 
 .ads {
-  background-image: url("/images/2016/02/1455099903_4d07e10a63ec44658d6d3214a7b3ef9b.jpg");
   background-size: cover;
   background-color: #d6edff;
   background-repeat:   no-repeat;
   background-position: center center;
-  height: 383px;
   margin: auto;
 }
