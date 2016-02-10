@@ -1,0 +1,58 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{> "header"}}
+
+{{! The main content area on the homepage }}
+<main id="content" class="content clearfix" role="main">
+
+    
+    <div id="articles">
+        <h1>Events@ІТ КПІ</h1>
+        {{#if archive}}
+            <h2>Попередні івенти</h2>
+        {{else}}
+            <a href="/events/archive/">Попередні івенти</a>
+        {{/if}}
+
+        {{#each events}}
+        <a class="article-link" href="/events/event/{{id}}/">
+            <article class="box is-link post">
+                
+                <header class="post-header"> 
+                  <h2 class="post-title">
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MMMM.YYYY"}}</time><br/>
+                    {{{title}}}</h2>
+                </header>
+               <p class="event-image"><img class="event-image-crop" src="{{image_url}}"></p>
+                <section class="event-excerpt">
+                  {{{excerpt words="24"}}}...
+                  <p class="post-meta" align="right"><i> min: {{level}}</i></p>
+                  </section> 
+                  
+            </article>
+        </a>
+        
+        {{/each}}
+
+        {{! Previous/next page links - displayed on every page }}
+        <nav role="navigation" class="pagination">
+            {{#if offset}}
+                <a href="/events{{archive}}/page/{{prev_page}}/" class="newer-posts">← Назад</a>
+            {{/if}}
+
+            <span class="page-number">Page {{page}}</span>
+
+            {{#if has_next}}
+                <a href="/events{{archive}}/page/{{next_page}}/" class="older-posts">Вперед →</a>
+            {{/if}}
+
+        </nav>
+
+    </div>
+
+    <div id="sidebar">
+        {{> "sidebar"}}
+    </div>
+
+</main>

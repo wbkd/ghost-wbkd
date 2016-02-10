@@ -1,35 +1,43 @@
 <div class="box sidebox about">
-  <div class="sidebox-title">About</div>
-  <div class="sidebox-content">
-    <p>{{@blog.description}}</p>
-
-    <!--Change this to your homepage-->
-    <p>See our latest projects at <a href="http://www.webkid.io">webkid.io</a></p>
-
-  </div>
-</div>
-
 <!--Change the links to your sites-->
 <div class="sidebox box social clearfix">
   <ul>
-    <a href="/rss" target="_blank" class="social-item rss"><li><i class="fa fa-rss"></i></li></a>
-    
-    <a href="http://twitter.com/webk1d" target="_blank" class="social-item tw"><li><i class="fa fa-twitter"></i></li></a>
-    
-    <a href="http://github.com/wbkd" target="_blank" class="social-item github"><li><i class="fa fa-github"></i></li></a>
-    
-    <a href="http://webkid.io" target="_blank" class="social-item home"><li><i class="fa fa-home"></i></li></a>
+    <a href="https://telegram.me/itkpi_bot" target="_blank" class="social-item telegram"><li><i class="fa fa-paper-plane-o fa-2x"></i></li></a>
 
+    <a href="https://vk.com/itkpi" target="_blank" class="social-item vk"><li><i class="fa fa-vk fa-2x"></i></li></a>
+
+    <a href="https://goo.gl/MmXgXo" target="_blank" class="social-item email"><li><i class="fa fa-at fa-2x"></i></li></a>
+
+    <a href="https://www.facebook.com/newitkpi" target="_blank" class="social-item facebook"><li><i class="fa fa-facebook fa-2x"></i></li></a>
+
+    <a href="/rss" target="_blank" class="social-item rss"><li><i class="fa fa-rss fa-2x"></i></li></a>
+<!--
+    <a href="http://twitter.com/webk1d" target="_blank" class="social-item tw"><li><i class="fa fa-twitter"></i></li></a>
+
+    <a href="http://github.com/wbkd" target="_blank" class="social-item github"><li><i class="fa fa-github"></i></li></a>
+
+    <a href="http://webkid.io" target="_blank" class="social-item home"><li><i class="fa fa-home"></i></li></a>
+-->
   </ul>
 
 </div>
 
 <div class="box sidebox latest-articles">
-  <div class="sidebox-title">Latest Articles</div>
-  <div class="sidebox-content loading">
-    <div class="loader">
-      <i class="fa fa-spinner fa-spin"></i>
-    </div>
+  <div class="ads-wrapper">
+    <a target="_blank" onclick="ga('send', 'event', 'ads', 'click', 'Ruby IT Sat');" href="http://frameworksdays.com/event/ruby-it-sat?utm_source=ITKPI&utm_medium=Pr-ikpi&utm_campaign=RubyITsat-ikpi">
+        <div class="ads" style='background-image: url("/images/2016/02/1455099903_4d07e10a63ec44658d6d3214a7b3ef9b.jpg"); height: 383px;'>
+        </div>
+    </a>
   </div>
 </div>
 
+{{#unless events_site}}
+    <div class="box sidebox latest-articles">
+      <div class="sidebox-title">Останні дописи</div>
+      <div class="sidebox-content loading">
+        <div class="loader">
+          <i class="fa fa-spinner fa-spin"></i>
+        </div>
+      </div>
+    </div>
+{{/unless}}

@@ -1,20 +1,23 @@
 {{! The big featured header }}
 <header id="header">
-    <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}">
+    <!-- <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}"> -->
 
-      <div class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></div>
+      <div class="blog-title"><a href="/">ІТ КПІ</a></div>
 
-      <!--Change this to customize the navigation-->
-      <div class="taglist-wrapper clearfix">
-        <ul id="taglist" class="taglist">
-            <li><a href="{{@blog.url}}">Home</a></li>
-            <li><a href="/tag/javascript">javascript</a></li>
-            <li><a href="/tag/nodejs">nodejs</a></li>
-            <li><a href="/tag/data-visualization">data visualization</a></li>
-            <li><a href="/tag/d3">d3</a></li>
-            <li><a href="/tag/maps">maps</a></li>
-        </ul>
-      </div>
-    </nav>
-
+          <!--Change this to customize the navigation-->
+          <div class="taglist-wrapper clearfix">
+            <center>
+              <ul id="taglist" class="taglist">
+                  <li><a href="/about/">Про нас</a></li>
+                  <li><a href="/tag/edu/">Education</a></li>
+                  <li><a href="/tag/js/">JavaScript</a></li>
+                  <li><a href="/tag/csharp/"> C# </a></li>
+                  <li><a href="/tag/swift/">Swift</a></li>
+                  <li><a href="/tag/fun/">Fun</a></li>
+                  <li><a href="/events/"><b>Events@ІТ КПІ</b></a></li>
+              </ul>
+            </center>
+          </div>
+    <!--</nav>-->
+    <a href="javascript:invert()" class="invertSwitch"><i class="fa fa-eye"></i> day/night</a>
 </header>

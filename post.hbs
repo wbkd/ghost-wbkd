@@ -35,6 +35,8 @@
         </section>
 
         <footer class="post-footer">
+            
+        {{#if tags}}Tags: <span class="contentpost_meta">{{tags separator=" · "}}</span>{{/if}}
 
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
@@ -83,7 +85,7 @@
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-    var disqus_shortname = 'example'; // required: replace example with your forum shortname
+    var disqus_shortname = 'itkpiblog'; // required: replace example with your forum shortname
     var disqus_identifier = '{{post.id}}';
  
     /* * * DON'T EDIT BELOW THIS LINE * * */

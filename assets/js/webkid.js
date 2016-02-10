@@ -1,4 +1,27 @@
+function setColorsFilter() {
+  var invertedPercent = Cookies.get("invertColors");
+  if (invertedPercent === undefined) {
+    invertedPercent = "0%";
+  }
+  ["body", "img", ".ads", ".post-image"].forEach(function(sel) {
+    $(sel).css("filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-webkit-filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-moz-filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-ms-filter", "invert(" + invertedPercent + ")");
+    $(sel).css("-o-filter", "invert(" + invertedPercent + ")");
+  });
+}
+
+function invert() {
+  var inverted = Cookies.get("invertColors");
+  if (inverted == "0%") inverted = "100%"
+  else inverted = "0%";
+  Cookies.set("invertColors", inverted);
+  setColorsFilter();
+}
+
 $(function() {
+  setColorsFilter();
 
   var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
@@ -33,4 +56,5 @@ $(function() {
     type: 'GET'
   }).success(renderSite);
 
+  $('a[href^="http://"]').add('a[href^="https://"]').not('a[href*=itkpi]').attr('target','_blank');
 });

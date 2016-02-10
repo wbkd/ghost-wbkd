@@ -1,5 +1,5 @@
 body {
-  background: #f5f5f5;
+
 }
 
 body * {
@@ -11,9 +11,7 @@ body * {
 
 #header {
   padding: 0;
-  background: #111;
   color: #fff;
-  margin-bottom: 2em;
 }
 
 #header nav {
@@ -35,34 +33,34 @@ body * {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 50px;
   text-decoration: none;
   max-width: 1250px;
   width: 100%;
   padding: 1.5rem 1.8rem;
   margin: 0 auto;
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
 #header .blog-title a,
 #header .blog-title a:visited,
 #header .blog-title a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #00a88e;
   padding: 0;
 }
 
 #header .taglist-wrapper {
   width: 100%;
-  background: #ffd00e;
-  padding: 0;
+  background: #f5f5f5;
+  padding: 0 0 1em;
 }
 
 #header ul.taglist {
-  padding: 0 1em;
-  margin: 0;
   list-style: none;
   max-width: 1250px;
-  margin: 0 auto;
+  display: table-row;
 }
 
 #header ul.taglist li {
@@ -71,7 +69,7 @@ body * {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   color: #111;
-  font-size: 12px;
+  font-size: 14px;
   float: left;
   cursor: pointer;
   transition: none;
@@ -85,20 +83,27 @@ body * {
 }
 
 #header ul.taglist li a {
+  color: #00a88e;
   text-decoration: none;
   transition: none;
   cursor: pointer;
 }
 
 #content {
+  background: #f5f5f5;
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0 2.5em 2.5em;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
+}
+
+#body-wrapper {
+  background: #f5f5f5;
+  width: 100%;
 }
 
 #articles, #article {
@@ -109,6 +114,7 @@ body * {
 
 #articles .post {
   width: 100%;
+  min-height: 250px;
   margin: 0;
   padding: 0;
   padding-bottom: 1em;
@@ -121,31 +127,53 @@ body * {
 
 #articles .post .post-image {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#articles .post header,
+#articles .post .event-image {
+
+
+  width: 45%;
+  height: 150px;
+
+  float:left;
+  margin:.5em 20px 0 15px;
+  overflow:hidden; /* this is important */
+
+
+  }
+#articles .post .event-image-crop {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 300%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+}
+
+#articles .post-header,
 #articles .post .post-excerpt,
 #articles .post footer {
   padding: 0 1.8rem;
 }
 
-#articles .post header {
-  padding-top: 1em;
-}
-
 #articles .post h2 {
   color: #4A4A4A;
+  font-size: 140%;
 }
 
 #articles .post:hover h2 {
   color: #111;
+  font-size: 140%;
 }
 
-#articles .post a, 
+#articles .post a,
 #articles .post a:visited{
   text-decoration: none;
 }
@@ -180,6 +208,10 @@ body * {
 .sidebox p {
   margin: 0;
   margin-bottom: 1em;
+}
+
+.sidebox.title {
+  color: #ffffff;
 }
 
 .sidebox.latest-articles a {
@@ -245,11 +277,11 @@ body * {
   margin: 0;
 }
 .social-item {
-    width: 25%;
+    width: 20%;
     float:left;
     color: #fff;
     text-decoration: none;
-    padding: .3em 0;
+    padding: .6em 0 .3em;
     -webkit-transition: opacity .3s;
     -o-transition: opacity .3s;
     transition: opacity .3s;
@@ -258,9 +290,21 @@ body * {
 .social-item:hover {
   color: #fff;
 }
-
 .social-item.rss {
   background: #f26522;
+}
+.social-item.vk {
+  background: #4c75a3;
+}
+.social-item.facebook {
+  background: #3a589e;
+}
+.social-item.email {
+  background: #ffffff;
+  color: #000000;
+}
+.social-item.telegram {
+  background: #57c1eb;
 }
 .social-item:hover {
   opacity: .8;
@@ -284,6 +328,10 @@ body * {
   list-style-type: none;
 }
 
+.site-footer {
+  background: #f5f5f5;
+  margin: 0;
+}
 
 
 .box.is-link:hover {
@@ -317,7 +365,7 @@ body * {
   opacity: .5;
 }
 
-#article img.post-image {
+#article img.post-image, img.event-image {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
@@ -361,4 +409,28 @@ a.article-link:visited {
   #taglist {
     display: none;
   }
+}
+
+.invertSwitch {
+    font-size: 15px;
+    left: 15px;
+    position: absolute;
+    text-decoration: none;
+    top: 15px;
+}
+.invertSwitch:hover {
+  background: #545454;
+  cursor: pointer;
+}
+
+.ads-wrapper {
+  padding: 0 10px;
+}
+
+.ads {
+  background-size: cover;
+  background-color: #d6edff;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  margin: auto;
 }
