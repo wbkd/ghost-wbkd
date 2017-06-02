@@ -1,3 +1,6 @@
+# What's different?
+This is a fork of ghost-webkd, with the nav-bar replaced. The original used a static list for navigation, this one works with ghost admin nav.
+
 # ghost-wbkd
 A [ghost](https://ghost.org/)/[journey](https://github.com/kabukky/journey) theme.
 
