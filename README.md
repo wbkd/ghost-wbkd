@@ -1,10 +1,9 @@
 # ghost-wbkd
 A [ghost](https://ghost.org/)/[journey](https://github.com/kabukky/journey) theme.
 
+:warning: We are **not using** this theme for our blog **anymore**. The development of new features will be therefore **discontinued**. We will still maintain this repository merging pull requests and fixing major issues. If you like to help, introducing new features, please start opening a pull-request. :warning:
 
 ![screenshot](https://raw.githubusercontent.com/wbkd/ghost-wbkd/master/screenshot.jpg)
-
-**See it live on [our blog](http://blog.webkid.io)**
 
 ### Install
 
