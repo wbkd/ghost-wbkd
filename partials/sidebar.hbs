@@ -24,12 +24,13 @@
 
 </div>
 
+{{#get "posts" limit=5 as |recents|}}
 <div class="box sidebox latest-articles">
   <div class="sidebox-title">Latest Articles</div>
-  <div class="sidebox-content loading">
-    <div class="loader">
-      <i class="fa fa-spinner fa-spin"></i>
-    </div>
+  <div class="sidebox-content">
+    {{#foreach recents}}
+      <a href="{{url}}"><div class="date">{{date format="DD MMMM YYYY"}}</div><div>{{title}}</div></a>
+    {{/foreach}}
   </div>
 </div>
-
+{{/get}}
